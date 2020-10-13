@@ -28,6 +28,10 @@ namespace Pokladna_Etzler
             //repositar = new SqlRepos();
             //repositar = new XmlRepos();
             pokladna = repositar.NactiVse();
+            foreach (var p in pokladna)
+            {
+                lvData.Items.Add(p.DoLvItem());
+            }
         }
     }
 }

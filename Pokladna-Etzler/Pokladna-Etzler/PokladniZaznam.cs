@@ -30,5 +30,18 @@ namespace Pokladna_Etzler
             Zustatek = zustatek;
             Poznamka = poznamka;
         }
+        public string DoLvItem()
+        {
+            if (Castka > 0)
+            {
+                new ListViewItem(new string[] { Datum.ToString("dd.MM.yyyy")
+                    , Cislo.ToString()
+                    , Popis
+                    , Castka.ToString()
+                    ,""
+                    , Zustatek.ToString()
+                    , Poznamka });
+            }
+        }
     }
 }
