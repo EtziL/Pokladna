@@ -22,9 +22,11 @@ namespace Pokladna_Etzler
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            repositar = new JsonRepos();
-            repositar = new SqlRepos();
-            repositar = new XmlRepos();
+            JsonRepos jsonRepos = new JsonRepos("data.json");
+            jsonRepos.VytvorTestData();
+            repositar = jsonRepos;
+            //repositar = new SqlRepos();
+            //repositar = new XmlRepos();
             pokladna = repositar.NactiVse();
         }
     }
