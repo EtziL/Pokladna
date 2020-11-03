@@ -1,3 +1,0 @@
-# Pokladna
-School project ...
-Etzler Lukáš
