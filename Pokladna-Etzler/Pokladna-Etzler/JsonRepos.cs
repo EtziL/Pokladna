@@ -13,7 +13,7 @@ namespace Pokladna_Etzler
         private string datovySoubor;
         public JsonRepos(string soubor)
         {
-            datovySoubor = soubor;
+            datovySoubor =  soubor;
         }
         public void VytvorTestData()
         {
